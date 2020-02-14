@@ -1,6 +1,11 @@
 const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
+const util = require("util");
+const writeFileAsync = util.promisify(fs.writeFile);
+
+// const generateMarkdown = require("generateMarkdown");
+// const api = require("api");
 
 const questions = [
     {
@@ -60,29 +65,35 @@ function init() {
     inquirer
         .prompt(questions)
         .then(function (input) {
-            const pojectTitle = input.project_title;
-            const projectDescription = input.project_description;
-            const tableOfContents = input.table_of_contents;
-            const installationGuide = input.installation;
-            const repoUsage = input.usage;
-            const license = input.stack;
-            const contributions = input.user_contributions;
-            const testing = input.tests;
             const userName = input.username;
             const queryUrl = `https://api.github.com/users/${userName}/repos?per_page=100`;
-        })
-        .then(function (queryUrl) {
+
             axios
                 .get(queryUrl)
                 .then(function (response) {
-                    const contact = response.data[0].owner.url;
-                    const image = response.data[0].owner.avatar_url;
+                    data = {
+                        pojectTitle: input.project_title,
+                        projectDescription: input.project_description,
+                        tableOfContents: input.table_of_contents,
+                        installationGuide: input.installation,
+                        repoUsage: input.usage,
+                        license: input.stack,
+                        contributions: input.user_contributions,
+                        testing: input.tests,
+                        image: response.data[0].owner.avatar_url,
+                        contact: response.data[0].owner.url
+                    }
+                    console.log(data);
+                    // writeToFile("README.md",data);
+
                 })
+
                 .catch(function (error) { console.log(error); return; });
         })
 }
 
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, data) {
+
+// }
 
 init();
