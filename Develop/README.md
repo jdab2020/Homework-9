@@ -1,36 +1,36 @@
-<h1>Homework 9</h1>
+## Homework 9
 
-<h2>Project Description: </h2>
+## Project Description:
 
-<h3>Generate a new readme file</h3>
+	Generate new readme file
 
-<h2>Table of Contents: </h2>
+## Table of Contents:
 
-<h3>Installation + Usage + License + Contributing + Tests + Questions</h3>
+	*Installation Usage License Contributing Tests Questions
 
-<h2>Installation: </h2>
+## Installation:
 
-<h3>npm install</h3
+	npm install
 
-<h2>Usage: </h2>
+## Usage:
 
-<h3>Input information and return a new readme file</h3>
+	Create a new readme file with user's inputs
 
-<h2>License: </h2>
+## License:
 
-<h3>MIT</h3>
+	MIT
 
-<h2>Contributing: </h2>
+## Contributing:
 
-<h3>Github</h3>
+	Github
 
-<h2>Testing: </h2>
+## Testing:
 
-<h3>npm test
+	npm test
 
-<img width="30" src="https://avatars2.githubusercontent.com/u/59621364?v=4"><img>
+<img width="250px" src="https://avatars2.githubusercontent.com/u/59621364?v=4"><img>
 
-<h2>Questions</h2>
+## Questions
 
-<h3>If you have any questions please contact me at <a href="https://api.github.com/users/jdab2020">https://api.github.com/users/jdab2020</a></h3>
+	If you have any questions please contact me at https://api.github.com/users/jdab2020
 
