@@ -1,36 +1,36 @@
-## Homework 9
+# Homework 9
 
-## Project Description:
+# Project Description:
 
-	Generate new readme file
+	Generate a new readme file
 
-## Table of Contents:
+# Table of Contents:
 
-	*Installation Usage License Contributing Tests Questions
+	Installation Usage License Contributing Tests Questions
 
-## Installation:
+# Installation:
 
 	npm install
 
-## Usage:
+# Usage:
 
 	Create a new readme file with user's inputs
 
-## License:
+# License:
 
 	MIT
 
-## Contributing:
+# Contributing:
 
 	Github
 
-## Testing:
+# Testing:
 
-	npm test
+	npm tests
 
 <img width="250px" src="https://avatars2.githubusercontent.com/u/59621364?v=4"><img>
 
-## Questions
+# Questions
 
-	If you have any questions please contact me at https://api.github.com/users/jdab2020
+	If you have any questions please contact me at <a href="https://api.github.com/users/jdab2020">https://api.github.com/users/jdab2020
 
